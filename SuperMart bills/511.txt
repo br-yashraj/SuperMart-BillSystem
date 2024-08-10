@@ -1,0 +1,22 @@
+		**Welcome Customer**
+
+Bill Number: 511				   07/25/2024
+Customer Name: Ravi				   08:24 PM
+Customer Phone: 123456
+______________________________________________
+
+ Product			Quantity		Price 
+______________________________________________
+ Maggie			01		14 Rs
+ Butter			01		56 Rs
+ Cheese (5p)			01		80 Rs
+______________________________________________
+
+ Gross Amount:				   143 Rs
+ Total GST Amount:				   7 Rs
+
+			Carry Bag: 5 Rs
+				______________
+ Total Net Amount:				   155 Rs
+				______________
+

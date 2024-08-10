@@ -1,0 +1,22 @@
+		**Welcome Customer**
+
+Bill Number: 26				   07/21/2024
+Customer Name: Rohit Yadev				   09:54 PM
+Customer Phone: 7481914592
+______________________________________________
+
+ Product			Quantity		Price 
+______________________________________________
+ Milk(0.5L)			01		32 Rs
+ Brown Bread			01		50 Rs
+ White Bread			01		23 Rs
+______________________________________________
+
+ Gross Amount:				   100 Rs
+ Total GST Amount:				   5 Rs
+
+			Carry Bag: 5 Rs
+				______________
+ Total Net Amount:				   110 Rs
+				______________
+

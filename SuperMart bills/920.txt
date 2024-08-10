@@ -1,0 +1,20 @@
+		**Welcome Customer**
+
+Bill Number: 920				   08/10/2024
+Customer Name: lalit pandey				   08:28 PM
+Customer Phone: 12345
+______________________________________________
+
+ Product			Quantity		Price 
+______________________________________________
+ Dahi 200g			01		20 Rs
+ Atta (5kg)			01		215 Rs
+______________________________________________
+
+ Gross Amount:				   224 Rs
+ Total GST Amount:				   11 Rs
+
+				______________
+ Total Net Amount:				   235 Rs
+				______________
+

@@ -1,0 +1,22 @@
+		**Welcome Customer**
+
+Bill Number: 634				   07/27/2024
+Customer Name: Tarun kr				   01:50 PM
+Customer Phone: 1234
+______________________________________________
+
+ Product			Quantity		Price 
+______________________________________________
+ Banana (12P)			01		60 Rs
+ Maggie			05		70 Rs
+ Butter			01		56 Rs
+______________________________________________
+
+ Gross Amount:				   177 Rs
+ Total GST Amount:				   9 Rs
+
+			Carry Bag: 5 Rs
+				______________
+ Total Net Amount:				   191 Rs
+				______________
+
