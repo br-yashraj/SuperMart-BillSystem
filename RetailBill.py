@@ -8,6 +8,28 @@ import smtplib
 from datetime import datetime
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Functionality part..........
 
 # !generate billnumber
@@ -256,20 +278,20 @@ def send_email():
         # creating a new tkinter window
         email_window = Toplevel()
         email_window.title('Send To Email')
-        email_window.config(bg="grey20")
+        email_window.config(bg="#010005")
         email_window.resizable(0,0)
         
-        SenderFrame = LabelFrame(email_window, text='SENDER', font=('arial',14,'bold'), bd=5, bg='grey20', fg='white')
+        SenderFrame = LabelFrame(email_window, text='SENDER', font=('arial',14,'bold'), bd=5, bg='#010005', fg='white')
         SenderFrame.grid(row=0, column=0, padx=20, pady=20)
 
-        SenderLabel = Label(SenderFrame, text="Sende's Email", font=('arial',10,'bold'), bg='grey20', fg='white')
+        SenderLabel = Label(SenderFrame, text="Sende's Email", font=('arial',10,'bold'), bg='#010005', fg='white')
         SenderLabel.grid(row=0, column=0, padx=10, pady=8)
 
         SenderEntry = Entry(SenderFrame, font=('arial',10,'bold'), bd=2, width=23, relief=RIDGE)
         SenderEntry.grid(row=0, column=1, padx=10, pady=8)
         SenderEntry.insert(0, 'br.yashraj16@gmail.com')
 
-        PasswordLabel = Label(SenderFrame, text="Password", font=('arial',10,'bold'), bg='grey20', fg='white')
+        PasswordLabel = Label(SenderFrame, text="Password", font=('arial',10,'bold'), bg='#010005', fg='white')
         PasswordLabel.grid(row=1, column=0, padx=10, pady=8)
 
         PasswordEntry = Entry(SenderFrame, font=('arial',10,'bold'), bd=2, width=23, relief=RIDGE, show="*")
@@ -277,16 +299,16 @@ def send_email():
         PasswordEntry.insert(0, 'xuls bkbp ipru vrhs')
         
 
-        RecipientFrame = LabelFrame(email_window, text='RECIPIENT', font=('arial',14,'bold'), bd=5, bg='grey20', fg='white')
+        RecipientFrame = LabelFrame(email_window, text='RECIPIENT', font=('arial',14,'bold'), bd=5, bg='#010005', fg='white')
         RecipientFrame.grid(row=1, column=0, padx=20, pady=20)
 
-        RecipientLabel = Label(RecipientFrame, text="Email Address", font=('arial',10,'bold'), bg='grey20', fg='white')
+        RecipientLabel = Label(RecipientFrame, text="Email Address", font=('arial',10,'bold'), bg='#010005', fg='white')
         RecipientLabel.grid(row=0, column=0, padx=10, pady=8)
 
         RecipientEntry = Entry(RecipientFrame, font=('arial',10,'bold'), bd=2, width=23, relief=RIDGE)
         RecipientEntry.grid(row=0, column=1, padx=10, pady=8)
 
-        MessageLabel = Label(RecipientFrame, text="Message", font=('arial',10,'bold'), bg='grey20', fg='white')
+        MessageLabel = Label(RecipientFrame, text="Message", font=('arial',10,'bold'), bg='#010005', fg='white')
         MessageLabel.grid(row=1, column=0, padx=10, pady=8)
 
         email_textarea = Text(RecipientFrame, font=('arial',10,'bold'), bd=2, relief=SUNKEN, width=42, height=11)
@@ -347,39 +369,39 @@ def goBack():
 root = Tk()
 root.geometry('1430x740')
 root.resizable(0,0)
-root.config(bg="red4")
+root.config(bg="black")
 
 # Load an image and convert it to a PhotoImage object
-image = Image.open("QR Code.jpg")  # Update this path to your image
-photo = ImageTk.PhotoImage(image)
+# image = Image.open("QR Code.jpg")  # Update this path to your image
+# photo = ImageTk.PhotoImage(image)
 
 # Store the original text
 original_text = ""
 
 # ! 1.Heading Frame
-headingLabel = Label(root,text='स्वागतम् है • Welcome to Barnwal SuperMart', font=('times new roman', 25, 'bold'), fg='gold', bg='gray20', bd=7, relief=GROOVE)
+headingLabel = Label(root,text='स्वागतम् है • Welcome to Barnwal SuperMart', font=('times new roman', 25, 'bold'), fg='gold', bg='#010005', bd=7, relief=GROOVE)
 headingLabel.pack(side='top', fill=X)
 
 # ! 2.Customer Detail Frame
-customer_details_frame = LabelFrame(root, text="Customer Detail's", font=('times new roman', 15, 'bold'),bg = 'gray20', fg='gold', bd=5, relief=GROOVE)
+customer_details_frame = LabelFrame(root, text="Customer Detail's", font=('times new roman', 15, 'bold'),bg = '#010005', fg='gold', bd=5, relief=GROOVE)
 customer_details_frame.pack(pady=3, fill=X)
 
 # Name label
-NameLabel = Label(customer_details_frame, text="Customer Name :", font=('times new roman', 15, 'bold'), bg='grey20', fg='white')
+NameLabel = Label(customer_details_frame, text="Customer Name :", font=('times new roman', 15, 'bold'), bg='#010005', fg='white')
 NameLabel.grid(row=0, column=0, padx=8, pady=3)
 
 NameEntry = Entry(customer_details_frame, textvariable='', font = ('arial', 15), bd=5, relief=GROOVE, width=20)
 NameEntry.grid(row=0, column=1, padx=5, pady=3)
 
 # Phone label
-PhoneLabel = Label(customer_details_frame, text="Phone No:", font=('times new roman', 15, 'bold'), bg='grey20', fg='white')
+PhoneLabel = Label(customer_details_frame, text="Phone No:", font=('times new roman', 15, 'bold'), bg='#010005', fg='white')
 PhoneLabel.grid(row=0, column=2, padx=8, pady=3)
 
 PhoneEntry = Entry(customer_details_frame, textvariable='', font = ('arial', 15), bd=5, relief=GROOVE, width=20)
 PhoneEntry.grid(row=0, column=3, padx=5, pady=5)
 
 # Bill label
-BillLabel = Label(customer_details_frame, text="Bill No:", font=('times new roman', 15, 'bold'), bg='grey20', fg='white')
+BillLabel = Label(customer_details_frame, text="Bill No:", font=('times new roman', 15, 'bold'), bg='#010005', fg='white')
 BillLabel.grid(row=0, column=4, padx=8, pady=5)
 
 BillEntry = Entry(customer_details_frame, textvariable='', font = ('arial', 15), bd=5, relief=GROOVE, width=20)
@@ -393,7 +415,7 @@ productsFrame = Frame(root)
 productsFrame.pack()
 
 #  Daily Essential Products inside Products
-dailyEssentialFrame = LabelFrame(productsFrame, text="Daily Essentials", font=('times new roman', 15, 'bold'),bg = 'gray20', fg='gold', bd=5, relief=GROOVE)
+dailyEssentialFrame = LabelFrame(productsFrame, text="Daily Essentials", font=('times new roman', 15, 'bold'),bg = '#010005', fg='gold', bd=5, relief=GROOVE)
 dailyEssentialFrame.grid(row=0, column=0)
 
 
@@ -407,7 +429,7 @@ item_no = ['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'item7', 'item8
 dailyEss_Entry = ['item1_Entry', 'item2_Entry', 'item3_Entry', 'item4_Entry', 'item5_Entry', 'item6_Entry', 'item7_Entry', 'item8_Entry']
 
 for i in range(8):
-    dailyEss_list[i] = Label(dailyEssentialFrame, text= dailyEss_list[i], font=('times new roman', 12, 'bold'),bg='grey20', fg='white')
+    dailyEss_list[i] = Label(dailyEssentialFrame, text= dailyEss_list[i], font=('times new roman', 12, 'bold'),bg='#010005', fg='white')
     dailyEss_list[i].grid(row=i, column=0, pady=9, padx=9, sticky="w")
 
     # ^Entry field of dailyEssentialFrame
@@ -420,7 +442,7 @@ for i in range(8):
     dailyEss_Entry[i].insert(0,0)
 
 #  &Fruits and Vegetables Products inside Products
-Fruit_VegeesFrame = LabelFrame(productsFrame, text="Fruits & Vegetables(kg)", font=('times new roman', 15, 'bold'),bg = 'gray20', fg='gold', bd=5, relief=GROOVE)
+Fruit_VegeesFrame = LabelFrame(productsFrame, text="Fruits & Vegetables(kg)", font=('times new roman', 15, 'bold'),bg = '#010005', fg='gold', bd=5, relief=GROOVE)
 Fruit_VegeesFrame.grid(row=0, column=1)
 
 F_V_list = ['1.Mango • 110Rs', '2.Banana • 60Rs', 
@@ -433,7 +455,7 @@ item_no = ['item9', 'item10', 'item11', 'item12', 'item13', 'item14', 'item15', 
 Fruit_Vegge_Entry = ['item9_Entry', 'item10_Entry', 'item11_Entry', 'item12_Entry', 'item13_Entry', 'item14_Entry', 'item15_Entry', 'item16_Entry']
 
 for i in range(8):
-    F_V_list[i] = Label(Fruit_VegeesFrame, text= F_V_list[i], font=('times new roman', 12, 'bold'),bg='grey20', fg='white')
+    F_V_list[i] = Label(Fruit_VegeesFrame, text= F_V_list[i], font=('times new roman', 12, 'bold'),bg='#010005', fg='white')
     F_V_list[i].grid(row=i, column=0, pady=9, padx=9, sticky="w")
 
     # ^Entry field of Fruits_VeggesFrame
@@ -445,7 +467,7 @@ for i in range(8):
     Fruit_Vegge_Entry[i].insert(0,0)
 
 #  &Grocery Products inside Products
-GroceryFrame = LabelFrame(productsFrame, text="Grocery", font=('times new roman', 15, 'bold'),bg = 'gray20', fg='gold', bd=5, relief=GROOVE)
+GroceryFrame = LabelFrame(productsFrame, text="Grocery", font=('times new roman', 15, 'bold'),bg = '#010005', fg='gold', bd=5, relief=GROOVE)
 GroceryFrame.grid(row=0, column=2)
 
 Grocery_list = ['1.Maggie • 14Rs', '2.Butter • 56Rs', 
@@ -458,7 +480,7 @@ item_no = ['item17', 'item18', 'item19', 'item20', 'item21', 'item22', 'item23',
 Grocery_Entry = ['item17_Entry', 'item18_Entry', 'item19_Entry', 'item20_Entry', 'item21_Entry', 'item22_Entry', 'item23_Entry', 'item24_Entry']
 
 for i in range(8):
-    Grocery_list[i] = Label(GroceryFrame, text= Grocery_list[i], font=('times new roman', 12, 'bold'),bg='grey20', fg='white')
+    Grocery_list[i] = Label(GroceryFrame, text= Grocery_list[i], font=('times new roman', 12, 'bold'),bg='#010005', fg='white')
     Grocery_list[i].grid(row=i, column=0, pady=9, padx=9, sticky="w")
 
     # ^Entry field of CosmaticFrame
@@ -469,26 +491,26 @@ for i in range(8):
 
 # & Receipt & Bill Frame inside Products
 
-BillFrame = Frame(productsFrame, bd=8, relief=GROOVE, bg='grey20')
+BillFrame = Frame(productsFrame, bd=8, relief=GROOVE, bg='#010005')
 BillFrame.grid(row=0, column=3)
 
-billareaLabel = Label(BillFrame, text="Bill Area", font=('times new roman', 15, 'bold'), width=10, bd=5, relief=GROOVE)
+billareaLabel = Label(BillFrame, text="Bill Area", font=('times new roman', 15, 'bold'), width=10, bd=5, relief=GROOVE, bg='#010005', fg='gold')
 billareaLabel.pack(fill=X)
 
-scrollbar = Scrollbar(BillFrame, orient=VERTICAL, width=25)
+scrollbar = Scrollbar(BillFrame, orient=VERTICAL, width=22, background='#edafb8')
 scrollbar.pack(side=RIGHT, fill=Y)
 
-textarea = Text(BillFrame, height=25, width=46, yscrollcommand=scrollbar.set)
+textarea = Text(BillFrame, height=25, width=46, yscrollcommand=scrollbar.set, bg='#ffffff')
 textarea.pack()
 scrollbar.config(command=textarea.yview)
 
 # ! 4.Bill Menu
-billMenuFrame = LabelFrame(root, text='Bill Menu', font=('times new roman', 15, 'bold'), bg='grey20', fg='gold', bd=5, relief=GROOVE)
+billMenuFrame = LabelFrame(root, text='Bill Menu', font=('times new roman', 15, 'bold'), bg='#010005', fg='gold', bd=5, relief=GROOVE)
 billMenuFrame.pack(fill=X)
 
 # ~Total Price of Daily Essential Products
  
-dailyEss_Products_Price = Label(billMenuFrame, text='Daily Ess Products Price', font=('times new roman', 14, 'bold'),bg='grey20', fg='white')
+dailyEss_Products_Price = Label(billMenuFrame, text='Daily Ess Products Price', font=('times new roman', 14, 'bold'),bg='#010005', fg='white')
 dailyEss_Products_Price.grid(row=0, column=0, pady=3, padx=9, sticky="w")
 
 # ~Entry of Total Price of Daily Essential Products 
@@ -498,7 +520,7 @@ dailyEss_Price_Entry.grid(row=0, column=1, pady=3, padx=10)
 
 # ~Total Price of Fruits_Veggess Products
  
-Fruit_Vegees_Price = Label(billMenuFrame, text='Fruits / Vegetables Price', font=('times new roman', 14, 'bold'),bg='grey20', fg='white')
+Fruit_Vegees_Price = Label(billMenuFrame, text='Fruits / Vegetables Price', font=('times new roman', 14, 'bold'),bg='#010005', fg='white')
 Fruit_Vegees_Price.grid(row=1, column=0, pady=3, padx=9, sticky="w")
 
 # ~Entry of Total Price of Fruits_Veggess Products
@@ -508,7 +530,7 @@ Fruit_Vegees_Price_Entry.grid(row=1, column=1, pady=3, padx=10)
 
 # ~Total Price of Grocery Products
  
-Grocery_Price = Label(billMenuFrame, text='Groceries Price', font=('times new roman', 14, 'bold'),bg='grey20', fg='white')
+Grocery_Price = Label(billMenuFrame, text='Groceries Price', font=('times new roman', 14, 'bold'),bg='#010005', fg='white')
 Grocery_Price.grid(row=2, column=0, pady=3, padx=9, sticky="w")
 
 # ~Entry of Total Price of Fruits_Veggess Products
@@ -518,7 +540,7 @@ Grocery_Price_Entry.grid(row=2, column=1, pady=3, padx=10)
 
 # ~Total bill Before GSt
  
-Tax_before_GST = Label(billMenuFrame, text='Gross Amount', font=('times new roman', 14, 'bold'),bg='grey20', fg='white')
+Tax_before_GST = Label(billMenuFrame, text='Gross Amount', font=('times new roman', 14, 'bold'),bg='#010005', fg='white')
 Tax_before_GST.grid(row=0, column=2, pady=3, padx=9, sticky="w")
 
 # ~Entry of Total bill Before GSt 
@@ -528,7 +550,7 @@ Tax_before_GST_Entry.grid(row=0, column=3, pady=3, padx=10)
 
 # ~Total GSt Amount
  
-Total_GST_Amount = Label(billMenuFrame, text='GST Amount', font=('times new roman', 14, 'bold'),bg='grey20', fg='white')
+Total_GST_Amount = Label(billMenuFrame, text='GST Amount', font=('times new roman', 14, 'bold'),bg='#010005', fg='white')
 Total_GST_Amount.grid(row=1, column=2, pady=3, padx=9, sticky="w")
 
 # ~Entry of Total GSt Amount
@@ -538,7 +560,7 @@ Total_GST_Amount_Entry.grid(row=1, column=3, pady=3, padx=10)
 
 # ~Total bill amount
  
-Total_Amount = Label(billMenuFrame, text='Grand Total', font=('times new roman', 14, 'bold'),bg='grey20', fg='white')
+Total_Amount = Label(billMenuFrame, text='Grand Total', font=('times new roman', 14, 'bold'),bg='#010005', fg='white')
 Total_Amount.grid(row=2, column=2, pady=3, padx=9, sticky="w")
 
 # ~Entry of Total bill
@@ -551,31 +573,31 @@ buttonFrame = Frame(billMenuFrame, bd=5, relief=GROOVE)
 buttonFrame.grid(row=0, column=4, rowspan=3)
 
 # ^Total Button
-totalButton = Button(buttonFrame, text='Total', font=('times new roman', 16, 'bold'), bg='grey20', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=total)
+totalButton = Button(buttonFrame, text='Total', font=('times new roman', 16, 'bold'), bg='#010005', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=total)
 totalButton.grid(row=0, column=0, pady=10, padx=5)
 
 # ^ Bill Button
-billButton = Button(buttonFrame, text='Bill', font=('times new roman', 16, 'bold'), bg='grey20', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=bill_area)
+billButton = Button(buttonFrame, text='Bill', font=('times new roman', 16, 'bold'), bg='#010005', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=bill_area)
 billButton.grid(row=0, column=1, padx=5)
 
 # ^ Send Button
-SendButton = Button(buttonFrame, text='Email', font=('times new roman', 16, 'bold'), bg='grey20', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=send_email)
+SendButton = Button(buttonFrame, text='Email', font=('times new roman', 16, 'bold'), bg='#010005', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=send_email)
 SendButton.grid(row=0, column=2, padx=5)
 
 # ^ Print Button
-PrintButton = Button(buttonFrame, text='Print', font=('times new roman', 16, 'bold'), bg='grey20', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=print_bill)
+PrintButton = Button(buttonFrame, text='Print', font=('times new roman', 16, 'bold'), bg='#010005', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=print_bill)
 PrintButton.grid(row=0, column=3, padx=5)
 
 # ^ Clear Button
-ClearButton = Button(buttonFrame, text='Clear', font=('times new roman', 16, 'bold'), bg='grey20', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=clearAll)
+ClearButton = Button(buttonFrame, text='Clear', font=('times new roman', 16, 'bold'), bg='#010005', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=clearAll)
 ClearButton.grid(row=0, column=4, padx=5)
 
 # ^ QR Code Button
-QrButton = Button(buttonFrame, text='QR Code', font=('times new roman', 16, 'bold'), bg='grey20', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=QR_Code)
+QrButton = Button(buttonFrame, text='QR Code', font=('times new roman', 16, 'bold'), bg='#010005', fg='white',  bd=3, width=7, pady=5, relief=GROOVE, command=QR_Code)
 QrButton.grid(row=0, column=5, padx=5)
 
 # ^ Back Button
-Back_Button = Button(buttonFrame, text='Back', font=('times new roman', 16, 'bold'), bg='grey20', fg='white',  bd=3, width=6, pady=3, relief=GROOVE, command=goBack)
+Back_Button = Button(buttonFrame, text='Back', font=('times new roman', 16, 'bold'), bg='#010005', fg='white',  bd=3, width=6, pady=3, relief=GROOVE, command=goBack)
 Back_Button.grid(row=0, column=6, padx=5)
 
 root.mainloop() 
