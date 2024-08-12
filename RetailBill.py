@@ -7,29 +7,6 @@ import random, os, tempfile
 import smtplib
 from datetime import datetime
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Functionality part..........
 
 # !generate billnumber
