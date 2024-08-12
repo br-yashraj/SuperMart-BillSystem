@@ -349,8 +349,8 @@ root.resizable(0,0)
 root.config(bg="black")
 
 # Load an image and convert it to a PhotoImage object
-# image = Image.open("QR Code.jpg")  # Update this path to your image
-# photo = ImageTk.PhotoImage(image)
+image = Image.open("QR Code.jpg")  # Update this path to your image
+photo = ImageTk.PhotoImage(image)
 
 # Store the original text
 original_text = ""
